@@ -2,9 +2,7 @@
 Class FileWalker for use file system.
 
 ```java
-List<String> files = new ArrayList<String>();
 FileWalker fw = new FileWalker();
-fw.walk(getFilesDir());
-fw.searchForFormatFiles(getFilesDir(), files, ".apk");
+ArrayList<String> result = fw.walk(getFilesDir());
+ArrayList<String> result = fw.walk(searchForFormatFiles(getFilesDir()), '.apk'));
 ```
-
